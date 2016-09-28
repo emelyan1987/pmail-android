@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/flWeb"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="visible">
+
+    <WebView
+        android:id="@+id/tracked_wv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_big" />
+
+    <ProgressBar
+        android:id="@+id/tracked_pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/edge_medium" />
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.TrackedListActivity">
+    
+    <LinearLayout
+        android:id="@+id/tracked_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tracked_tv_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tracking Test Mail"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recipients"/>
+            <Button
+                android:id="@+id/tracked_btn_call"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:text="Call"
+                android:background="#2D9EC0"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/tracked_btn_email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Email"
+                android:background="#6FAA32"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tracked_tv_recipients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:lines="2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tracked_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 11, 2016 15:30"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/tracked_btn_view_message"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="View Message"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_mini"
+            android:layout_alignBottom="@+id/rlMain"
+            android:background="@color/lightGrayColor"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tracked_viewpager"
+        android:layout_below="@+id/tracked_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</RelativeLayout>

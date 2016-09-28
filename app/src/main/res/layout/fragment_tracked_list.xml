@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tracked_ll_stat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/tracked_tv_opens" android:text="0 Opens" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_opens_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        <TextView android:id="@+id/tracked_tv_clicks" android:text="0 Clicks" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_clicks_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        <TextView android:id="@+id/tracked_tv_replies" android:text="0 Replies" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_replies_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tracked_ll_stat">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tracked_rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/noDataToShow"
+            android:id="@+id/tracked_tv_no_data"
+            android:textStyle="normal"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/tracked_pb_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

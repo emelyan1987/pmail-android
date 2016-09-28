@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/addFiles"
+        android:icon="@drawable/ic_attachment"
+        android:orderInCategory="100"
+        android:title="@string/menuAddFiles"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/send"
+        android:icon="@drawable/ic_send_white_action_bar"
+        android:orderInCategory="100"
+        android:title="@string/menuSend"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/notifyMe"
+        android:icon="@drawable/ic_notify_white"
+        android:orderInCategory="100"
+        android:title="@string/menuNotifyMe"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sendAvailability"
+        android:icon="@drawable/ic_calendar"
+        android:orderInCategory="100"
+        android:title="@string/menuSendAvailability"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/createInvitation"
+        android:icon="@drawable/ic_email_white"
+        android:orderInCategory="100"
+        android:title="@string/menuCreateInvitation"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/trackMail"
+        android:icon="@drawable/ic_track_white"
+        android:orderInCategory="100"
+        android:title="@string/menuTrackMail"
+        app:showAsAction="ifRoom"/>
+
+</menu>

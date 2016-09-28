@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andexert.library.RippleView
+    rv_centered="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:rv_color="@color/gray">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipeInbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llLeft"
+            android:layout_width="@dimen/widthSwipeLeft"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/flLeftNotify"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blue">
+
+                <TextView
+                    android:id="@+id/tvTitleLeftNotify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/edge_medium"
+                    android:gravity="center"
+                    android:text="@string/notifyMe"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="normal"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flLeftSnooze"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/amber"
+                >
+
+                <TextView
+                    android:id="@+id/tvTitleLeftSnooze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/edge_medium"
+                    android:gravity="center"
+                    android:text="@string/schedule"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="normal"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flRight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryGreen">
+
+            <TextView
+                android:id="@+id/tvTitleRight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="@dimen/edge_medium"
+                android:gravity="left|center_vertical"
+                android:text="@string/archive"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressLoadText"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/llMainContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edge_medium"
+                android:layout_marginTop="@dimen/edge_medium"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <FrameLayout
+                    android:id="@+id/flPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/edge_medium"
+                    android:layout_marginLeft="@dimen/edge_medium"
+                    android:layout_marginTop="@dimen/edge_normal">
+
+                    <TextView
+                        android:id="@+id/tvMailPicture"
+                        android:layout_width="@dimen/inbox_square_size"
+                        android:layout_height="@dimen/inbox_square_size"
+                        android:bottomRightRadius="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_normal"
+                        android:textStyle="normal"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/llInformation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/edge_normal"
+                    android:layout_marginLeft="@dimen/edge_above"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/edge_normal"
+                        android:layout_marginLeft="@dimen/edge_above"
+                        android:ellipsize="end"
+                        android:orientation="vertical">
+
+                        <com.planckmail.views.MainTextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/edge_normal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Rajesh Kumar"
+                            style="@style/font_style_content_title"/>
+
+                        <com.planckmail.views.MainTextView
+                            android:id="@+id/tvSubject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/edge_normal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Upwork Contract Method Change"
+                            style="@style/font_style_content_subtitle"/>
+
+                        <com.planckmail.views.MainTextView
+                            android:id="@+id/tvSnippet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/edge_normal"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="Hi Anton, I have any problems with my bank account"
+                            style="@style/font_style_content_description"/>
+                    </LinearLayout>
+
+                    <com.planckmail.views.MainTextView
+                        android:id="@+id/tvShowOriginal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/edge_normal"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:minHeight="@dimen/edge_huge"
+                        android:singleLine="true"
+                        android:text="@string/showOriginal"
+                        android:textColor="@color/blueLight"
+                        android:textSize="@dimen/text_mini"
+                        android:textStyle="normal"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivShowFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/edge_normal"
+                    android:layout_marginTop="@dimen/edge_normal"
+                    android:background="@drawable/ic_reply_black_message"
+                    android:contentDescription=""
+                    android:visibility="gone"/>
+
+
+                <ImageView
+                    android:id="@+id/ivReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/edge_normal"
+                    android:layout_marginTop="@dimen/edge_normal"
+                    android:background="@drawable/ic_reply_black_message"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/llTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/edge_normal"
+                    android:layout_marginTop="@dimen/edge_normal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:singleLine="true"
+                        android:text="Today"
+                        style="@style/font_style_content_description"/>
+
+                    <TextView
+                        android:id="@+id/tvCountMessages"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/mail_count_box_highlight"
+                        android:drawableRight="@drawable/ic_chevron_right_grey"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:singleLine="true"
+                        android:text="6"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btUnsubcribe"
+                android:textSize="@dimen/text_mini_tiny"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:text="@string/unsubscribe"
+                android:padding="@dimen/edge_tiny"
+                android:textColor="@color/defaultBlue"
+                android:background="@null"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/edge_normal_medium"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</com.andexert.library.RippleView>

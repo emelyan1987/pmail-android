@@ -1,0 +1,47 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <FrameLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.92"/>
+
+        <include
+            layout="@layout/elem_menu_header"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDrawer"
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/gray_email"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/expandList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edge_above"
+            android:groupIndicator="@null"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

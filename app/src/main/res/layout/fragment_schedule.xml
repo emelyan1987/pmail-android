@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_schedule_height"
+    android:showDividers="middle"
+    android:background="@color/gray_email"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_schedule_width"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLaterToday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_later_today"
+            android:gravity="center"
+            android:text="@string/scheduleLaterToday"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+
+        <TextView
+            android:id="@+id/tvThisEvening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_this_evening"
+            android:gravity="center"
+            android:text="@string/scheduleThisEvening"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+
+        <TextView
+            android:id="@+id/tvTomorrow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_tomorrow"
+            android:gravity="center"
+            android:text="@string/scheduleTomorrow"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_schedule_width"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/tvThisWeekend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_this_weekend"
+            android:gravity="center"
+            android:text="@string/scheduleThisWeekend"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+
+        <TextView
+            android:id="@+id/tvNextWeek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_next_two_week"
+            android:gravity="center"
+            android:text="@string/scheduleNextWeek"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+
+        <TextView
+            android:id="@+id/tvInMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_next_three_weeks"
+            android:gravity="center"
+            android:text="@string/scheduleInMonth"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/edge_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_schedule_width"
+        android:showDividers="middle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSomeDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_someday"
+            android:text="@string/scheduleSomeDay"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/edge_normal" />
+
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/text_mini_normal"
+            android:textColor="@color/gray"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvPickADate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/schedulePickDate"
+            android:textColor="@color/lightGreen"
+            android:textSize="@dimen/text_extra_extra_huge"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

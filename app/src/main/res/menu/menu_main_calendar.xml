@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionAgenda"
+        android:title="@string/agenda"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionDay"
+        android:title="@string/day"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionDefaultCalendar"
+        android:title="@string/defaultCalendar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionCalendarSettings"
+        android:title="@string/calendarSettings"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_above"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flMailContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/edge_above"
+            android:layout_weight="0.8">
+
+            <TextView
+                android:id="@+id/tvContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/edge_normal"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/flMessage"
+            android:layout_width="0dp"
+            android:padding="@dimen/edge_above"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/ivMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edge_above"
+                android:background="@drawable/ic_message"
+                android:drawablePadding="@dimen/edge_normal"
+                android:layout_gravity="right"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"
+                android:visibility="visible"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

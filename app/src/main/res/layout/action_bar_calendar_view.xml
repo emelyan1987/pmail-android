@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvShowMonth"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="@dimen/edge_medium"
+    android:drawablePadding="@dimen/edge_normal"
+    android:drawableRight="@drawable/ic_expand_more_white_action_bar"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:textColor="@color/white"
+    android:textSize="@dimen/text_mini_normal"
+    android:textStyle="normal" />

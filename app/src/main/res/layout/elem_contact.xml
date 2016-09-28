@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMainContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+    android:layout_marginTop="@dimen/edge_medium"
+   android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/flPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginBottom="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_normal">
+
+        <TextView
+            android:id="@+id/tvMailPicture"
+            android:layout_width="@dimen/inbox_square_size"
+            android:layout_height="@dimen/inbox_square_size"
+            android:bottomRightRadius="10dp"
+            android:gravity="center"
+            android:text="RJ"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llInformation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginBottom="@dimen/edge_medium"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Rajesh Kumar"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_mini_normal_small"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="rajesh.x.kumar@gmail.com"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal_small"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/edge_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

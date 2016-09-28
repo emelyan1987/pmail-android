@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardUnsubscribe"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/edge_mini"
+    android:background="@color/gray_light"
+    card_view:cardCornerRadius="@dimen/edge_normal"
+    card_view:cardElevation="@dimen/edge_mini"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/cbSpammer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:padding="@dimen/edge_medium"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvSpammerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edge_normal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_mini_normal_small"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvSpammerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edge_normal"
+                android:layout_marginBottom="@dimen/edge_normal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_mini_normal_small"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMessageCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/edge_medium"
+            android:layout_weight="0.1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal_small"
+            android:textStyle="normal"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

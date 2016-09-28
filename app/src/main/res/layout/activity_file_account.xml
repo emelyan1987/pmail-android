@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/llFilesAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_email"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDropBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/edge_normal"
+            android:layout_marginLeft="@dimen/edge_normal"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:layout_marginTop="@dimen/edge_normal_medium"
+            android:background="@drawable/white_rounded_corner"
+            android:drawableLeft="@drawable/dropbox"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/edge_large"
+            android:text="@string/dropBox"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:id="@+id/tvGoogleDrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_normal"
+            android:layout_marginLeft="@dimen/edge_normal"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:background="@drawable/white_rounded_corner"
+            android:drawableLeft="@drawable/google_drive"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/edge_large"
+            android:text="@string/googleDrive"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:id="@+id/tvOneDrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_normal"
+            android:layout_marginLeft="@dimen/edge_normal"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:background="@drawable/white_rounded_corner"
+            android:drawableLeft="@drawable/one_drive"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/edge_large"
+            android:text="@string/oneDrive"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:id="@+id/tvBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/edge_normal_medium"
+            android:layout_marginLeft="@dimen/edge_normal"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:background="@drawable/white_rounded_corner"
+            android:drawableLeft="@drawable/box"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/edge_large"
+            android:text="@string/box"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prLoadFileAccount"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <WebView
+        android:id="@+id/wbLoadFileAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</RelativeLayout>

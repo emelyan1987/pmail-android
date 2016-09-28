@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMailFile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/flImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edge_above"
+        android:layout_marginRight="@dimen/edge_normal"
+        android:layout_marginTop="@dimen/edge_medium">
+
+        <ImageView
+            android:id="@+id/ivFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prLoadImage"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llMainContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFileRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/removeFile"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/edge_normal"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_mini"
+        android:textStyle="normal"
+        android:visibility="gone" />
+
+</LinearLayout>

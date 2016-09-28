@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rlFilterMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edge_mini"
+        android:layout_alignBottom="@+id/rlMain"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edge_most"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rlImportant"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:baselineAligned="false"
+            android:layout_weight="1">
+
+        <com.planckmail.views.MainTextView
+            android:id="@+id/tvImportant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ivCalendar"
+            android:layout_marginLeft="@dimen/edge_medium"
+            android:layout_marginTop="@dimen/edge_normal"
+            android:text="@string/important"
+            style="@style/font_style_tab_selected"/>
+
+        <View
+            android:id="@+id/viewImportant"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_mini"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lightGreen"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSocial"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:layout_weight="1">
+
+        <com.planckmail.views.MainTextView
+            android:id="@+id/tvSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ivFiles"
+            android:layout_marginLeft="@dimen/edge_medium"
+            android:layout_marginTop="@dimen/edge_normal"
+            android:text="@string/social"
+            style="@style/font_style_tab"/>
+
+        <View
+            android:id="@+id/viewSocial"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_mini"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lightGreen"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlReadLater"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:layout_weight="1">
+
+        <com.planckmail.views.MainTextView
+            android:id="@+id/tvReadLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ivFiles"
+            android:layout_marginLeft="@dimen/edge_medium"
+            android:layout_marginTop="@dimen/edge_normal"
+            android:text="@string/clutter"
+            style="@style/font_style_tab"/>
+
+        <View
+            android:id="@+id/viewReadLater"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_mini"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lightGreen"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFollowUp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:layout_weight="1">
+
+        <com.planckmail.views.MainTextView
+            android:id="@+id/tvFollowUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ivFiles"
+            android:layout_marginLeft="@dimen/edge_medium"
+            android:layout_marginTop="@dimen/edge_normal"
+            android:text="@string/reminder"
+            style="@style/font_style_tab"/>
+
+        <View
+            android:id="@+id/viewFollowUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_mini"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@color/lightGreen"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</RelativeLayout>

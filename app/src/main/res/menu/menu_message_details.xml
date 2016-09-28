@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity">
+
+        <item
+            android:id="@+id/delete"
+            android:icon="@drawable/ic_delete_white_action_bar"
+            android:orderInCategory="100"
+            android:title="@string/menu_delete"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/archive"
+            android:icon="@drawable/ic_archive_white_action_bar"
+            android:orderInCategory="100"
+            android:title="@string/menu_archive"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/markFlagged"
+            android:orderInCategory="100"
+            android:title="@string/menu_mark_flagged"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/removeFlag"
+            android:orderInCategory="100"
+            android:title="@string/menu_remove_flag"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/markUnread"
+            android:orderInCategory="100"
+            android:title="@string/menu_mark_unread"
+            app:showAsAction="never" />
+</menu>

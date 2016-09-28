@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PlanckMailAndroid.iml" filepath="$PROJECT_DIR$/PlanckMailAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarLibrary/calendarLibrary.iml" filepath="$PROJECT_DIR$/calendarLibrary/calendarLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gcmsender/gcmsender.iml" filepath="$PROJECT_DIR$/gcmsender/gcmsender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekViewLibrary/weekViewLibrary.iml" filepath="$PROJECT_DIR$/weekViewLibrary/weekViewLibrary.iml" />
+    </modules>
+  </component>
+</project>

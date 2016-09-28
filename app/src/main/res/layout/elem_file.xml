@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/edge_normal">
+
+        <TextView
+            android:id="@+id/tvFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llMailFile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_medium"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/edge_normal">
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edge_medium"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvFileType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvModifyDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+</LinearLayout>

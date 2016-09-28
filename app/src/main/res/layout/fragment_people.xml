@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMainPeople"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="normal" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclePeople"
+            android:layout_width="match_parent"
+            android:clipToPadding="true"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/noInternetConnection"
+            android:id="@+id/tvNoInternetConnection"
+            android:textStyle="normal"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/prLoadContacts"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinateLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/llMessageMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/messageToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/lightGreen"
+            android:layout_alignParentTop="true"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/messageToolbar"
+            android:id="@+id/recycleMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_email"
+            android:scrollbars="vertical"
+            android:layout_above="@+id/layoutFooter"/>
+
+        <TextView
+            android:id="@+id/tvNoInternetConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="@string/noInternetConnection"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/prLoadMessage"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <include
+            android:id="@+id/layoutFooter"
+            layout="@layout/elem_message_footer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/footer_height"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

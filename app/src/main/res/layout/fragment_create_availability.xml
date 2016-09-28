@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llEventDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etEventSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/eventSubject"
+        android:paddingLeft="@dimen/edge_normal"
+        android:paddingRight="@dimen/edge_normal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/etEventLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/eventLocation"
+        android:paddingLeft="@dimen/edge_normal"
+        android:paddingRight="@dimen/edge_normal"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edge_medium"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_above"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edge_medium"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_above"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+</LinearLayout>

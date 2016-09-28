@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_email"
+                android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshKeep"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/edge_most_large"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleArchiveSpammer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_email"
+            android:scrollbars="vertical"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tvKeep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGreen"
+        android:gravity="center"
+        android:padding="@dimen/edge_big"
+        android:text="@string/keep"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+      />
+
+    <ProgressBar
+        android:id="@+id/prLoadSpam"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvNoMails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/no_mails"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/text_large"
+        android:textStyle="normal"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

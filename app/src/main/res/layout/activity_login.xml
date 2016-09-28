@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlMailn"
+    android:background="@color/white">
+
+
+    <WebView
+        android:id="@+id/webViewLogin"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="false"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_extra_extra_huge"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btLogin"
+        android:layout_marginBottom="@dimen/edge_most" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:background="@color/lightGreen"
+        android:text="@string/act_setting_add_account"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:layout_alignWithParentIfMissing="false"
+
+        android:padding="@dimen/edge_medium"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="@dimen/edge_big"
+        android:layout_above="@+id/tvPrivatePolice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/edge_big"
+        android:layout_marginLeft="@dimen/edge_big" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/privatePolice"
+        android:id="@+id/tvPrivatePolice"
+        android:textStyle="normal"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_mini_normal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/edge_big"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prLoadMain"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivLogo"
+        android:background="@drawable/account_page_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/edge_extra_most" />
+
+</RelativeLayout>

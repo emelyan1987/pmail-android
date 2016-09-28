@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardViewAvailability"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/edge_normal"
+    android:visibility="gone"
+    card_view:cardCornerRadius="@dimen/edge_normal">
+
+    <LinearLayout
+        android:id="@+id/llAvailabilityDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMeetingDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/tvAvailabilityTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/edge_medium"
+                android:text="@string/availableTime"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDeleteAvailability"
+                android:layout_width="@dimen/edge_huge"
+                android:layout_height="@dimen/edge_huge"
+                android:layout_marginRight="@dimen/edge_normal"
+                android:layout_marginTop="@dimen/edge_normal"
+                android:background="@drawable/ic_close_grey"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvMeetingDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+
+            android:text="@string/meetingDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:id="@+id/tvMeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_medium"
+            android:layout_marginLeft="@dimen/edge_medium"
+            android:layout_marginRight="@dimen/edge_medium"
+            android:layout_marginTop="@dimen/edge_big"
+            android:text="@string/meeting"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:text="@string/length"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:text="@string/locationForMeeting"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:id="@+id/llTimeZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTimeZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edge_medium"
+                android:text="@string/timeZone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvViewTimeZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edge_medium"
+                android:autoLink="web"
+                android:text="@string/viewTimeZone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textColorLink="@color/lightGreen"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hrAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llAvailability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/llChangeAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTimeWorkDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edge_medium"
+                android:text="@string/workingTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvNoneTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edge_medium"
+                android:background="@drawable/green_background"
+                android:padding="@dimen/edge_normal"
+                android:text="@string/noneTime"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                android:textColorLink="@color/lightGreen"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

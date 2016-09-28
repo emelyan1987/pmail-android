@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/account_page_logo"/>
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:text="@string/tutorialDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tvPoweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/edge_medium"
+            android:text="@string/tutorialPoweredBy"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btGetStarted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvPrivatePolice"
+        android:layout_marginLeft="@dimen/edge_extra_huge"
+        android:layout_marginRight="@dimen/edge_extra_huge"
+        android:background="@drawable/green_background"
+        android:padding="@dimen/edge_big"
+        android:text="@string/getStarted"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tvPrivatePolice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textStyle="normal"
+        android:layout_margin="@dimen/edge_medium"
+        android:text="@string/viewOutPolice"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray_light"/>
+
+</RelativeLayout>

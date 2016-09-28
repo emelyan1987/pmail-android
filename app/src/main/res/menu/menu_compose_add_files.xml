@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionChoseFromAccounts"
+        android:title="@string/choseFromAccounts"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/actionChoseFromPhotos"
+        android:title="@string/choseFromPhotos"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/actionTakePhoto"
+        android:title="@string/takePhoto"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

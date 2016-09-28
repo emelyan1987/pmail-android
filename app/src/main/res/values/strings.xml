@@ -1,0 +1,433 @@
+<resources>
+    <string name="app_name">PlanckMail</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="actionCreateMessage">Create message</string>
+
+    <string name="apiKey">AIzaSyDWzIPHj2SAnqKLBw3-mtlksqxWiy-PjoQ</string>
+    <string name="app_id">5girg6tjmjuenujbsg0lnatlq</string>
+    <string name="dropBoxAppKey">7lz77dizvzpeqt2</string>
+    <string name="dropBoxAppSecret">24rd5nj7q3fykqr</string>
+    <string name="dropBoxRedirectUri">https://api.dropboxapi.com/1/account/info</string>
+    <string name="nylasRedirectUri">https://api.nylas.com/account</string>
+    <string name="oneDriveRedirectUri">https://api.onedrive.com/drive</string>
+    <string name="oneDriveAppKey">000000004C17BA1E</string>
+    <string name="oneDriveClientSecret">vxHNSXa98asNzcCAKGi7G5OKxVs267oS</string>
+    <string name="googleDriveClientId">830408671142-e0lrj6li8thjov0rqsuh42e07o9e3v7j.apps.googleusercontent.com</string>
+    <string name="googleDriveClientSecret">Bnnwzo8-G41K0WOyI4NBTqs7</string>
+    <string name="googleDriveRedirectUri">http://localhost:8080</string>
+    <string name="boxClientSecret">yUTnbG7McwbgFtGPFthETSEMFeR0qDV1</string>
+    <string name="boxAppKey">atqbaw0mdpn9ub50xht4rden1odr6xbc</string>
+    <string name="boxRedirectUri">http://localhost:8080</string>
+
+    <string name="tutorialDescription">A Simple, Smart and Beautiful Inbox</string>
+    <string name="tutorialPoweredBy">Powered by Artificial Intelligence</string>
+    <string name="getStarted">Get Started</string>
+    <string name="viewOutPolice">View out Private Police</string>
+
+    <string name="all_accounts">All Accounts</string>
+    <string name="item_inbox">Inbox</string>
+    <string name="item_draft">Drafts</string>
+    <string name="item_trash">Trash</string>
+    <string name="item_sent">Sent</string>
+    <string name="item_archive">All mail</string>
+    <string name="item_scheduled">Scheduled</string>
+    <string name="item_starred">Starred</string>
+    <string name="item_spam">Spam</string>
+    <string name="item_folders">Folders</string>
+
+    <string name="halfHour">30 minutes</string>
+    <string name="oneHour">1 hour</string>
+    <string name="twoHours">2 hour</string>
+    <string name="threeHours">3 hour</string>
+    <string name="fourHours">4 hour</string>
+    <string name="fiveHours">5 hour</string>
+    <string name="sixHours">6 hour</string>
+
+    <string name="tutorialScreenOneTitle">Smart Inbox</string>
+    <string name="tutorialScreenTwoTitle">Attach Files</string>
+    <string name="tutorialScreenThreeTitle">Email Summery</string>
+    <string name="tutorialScreenFourTitle">Snooze Email</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="unsubscribed">Unsubscribed</string>
+    <string name="unsubscribing">Unsubscribing&#8230;</string>
+    <string name="close">Close</string>
+    <string name="unsubscribingDesc">This may take a few minutes, but you can close the screen and get back to your email or do something else. Later, look for a notification with results</string>
+
+    <string name="tutorialScreenFiveTitle">Your Own Personal Assistant</string>
+
+    <string name="tutorialScreenOneSubTitle">We have put the most important,\nactionable items here</string>
+    <string name="tutorialScreenTwoSubTitle">Attach files from your DropBox, Box\nGoogle Drive, One Drive on your Phone</string>
+    <string name="tutorialScreenThreeSubTitle">Highlights important info in long emails\nfor easy preview. Displays summary of all\nthreads in a conversation.</string>
+    <string name="tutorialScreenFourSubTitle">We let you snooze messages until later\nand returns them to your inbox\nautomatically, so you can focus on what\'s\nimportant now.</string>
+    <string name="tutorialScreenFiveSubTitle">Our AI-based Virtual Personal Assistant\nwill setup meeting on behalf of you.</string>
+
+    <string name="tutorialScreenOneDescription">Use "smart inbox"\nanimation\n(attached in zip file)</string>
+    <string name="tutorialScreenTwoDescription">Use "file"\nanimation\n(attached in zip file)</string>
+    <string name="tutorialScreenThreeDescription">Use "summarization"\nanimation\n(attached in zip file)</string>
+    <string name="tutorialScreenFourDescription">Use "snooze"\nanimation\n(attached in zip file)</string>
+    <string name="tutorialScreenFiveDescription">Use "va" animation\n(attached in zip file)</string>
+
+    <string name="unsubscribeTitle">Confirmation</string>
+    <string name="unsubscribeSubTitle">Unsubscribe from %1$s</string>
+    <string name="unsubscribeDescription">Planck mail will attempt to unsubscribe and delete email from selected senders. This action is not reversible.</string>
+
+    <string name="scheduleLaterToday">Today</string>
+    <string name="scheduleTomorrow">Tomorrow</string>
+    <string name="scheduleThisEvening">This evening</string>
+    <string name="scheduleThisWeekend">This weekend</string>
+    <string name="scheduleSomeDay">SomeDay</string>
+    <string name="scheduleNextWeek">Next week</string>
+    <string name="scheduleNextTwoWeeks">Next 2 weeks</string>
+    <string name="scheduleNextThreeWeeks">Next 3 weeks</string>
+    <string name="scheduleInMonth">In a month</string>
+    <string name="schedulePickDate">08</string>
+    <string name="scheduleAnotherDate">More than one month</string>
+
+    <string name="privatePolice">VIEW OUR PRIVATE POLICE</string>
+
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="no_text">-</string>
+    <string name="details">Details</string>
+    <string name="showOriginal">Show original</string>
+    <string name="search">Search</string>
+    <string name="actionSearch">@string/search</string>
+
+    <string name="contactDetails">Contact Details</string>
+    <string name="contacts">Contacts</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+
+    <string name="important">Important</string>
+    <string name="clutter">Clutter</string>
+    <string name="FollowUp">Quick filter</string>
+    <string name="quickFilter">Quick filter</string>
+    <string name="reminder">Reminder</string>
+    <string name="social">Social</string>
+
+    <string name="recentFiles">Recent files</string>
+    <string name="photoLibrary">Photo library</string>
+    <string name="takePicture">Take a picture</string>
+
+    <string name="mailTitle">Mail</string>
+    <string name="calendarTitle">Calendar</string>
+    <string name="filesTitle">Files</string>
+    <string name="peopleTitle">People</string>
+    <string name="noAvailableTime">No available tme</string>
+    <string name="menu_inbox">Inbox</string>
+
+    <string name="successful_login">Login successful</string>
+    <string name="error_network">Network error</string>
+    <string name="error_no_response">No response</string>
+    <string name="error_network_http_error">Http Network error</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="emptySubject">Empty subject</string>
+    <string name="none">None</string>
+    <string name="meeting"><b>Meeting: </b>%1$s</string>
+    <string name="length"><b>Length: </b>%1$s</string>
+    <string name="locationForMeeting"><b>Location: </b>%1$s</string>
+    <string name="timeZone"><b>TimeZone: </b></string>
+    <string name="viewTimeZone">View your time zone</string>
+    <string name="workingTime">Don\'t see a time work for you?</string>
+    <string name="noneTime">None of this time work</string>
+    <string name="availableTime">My available time</string>
+    <string name="downloadingFile">Downloading file</string>
+    <string name="meetingDescription">Below are some available for you meeting. Click on the meeting see if that works best for you.</string>
+    <string name="fileModifyBy">Last modify at %1$s</string>
+    <string name="noEmailWith">No email with %1$s</string>
+
+    <string name="noParticipant">No participant</string>
+    <string name="addEmailAccount">Add email account</string>
+    <string name="addFileAccount">Add file account</string>
+    <string name="imageError">Can not load image</string>
+
+    <string name="dropBox">DropBox</string>
+    <string name="box">Box</string>
+    <string name="oneDrive">One drive</string>
+    <string name="googleDrive">Google drive</string>
+    <string name="ok">OK</string>
+
+    <string name="schedule">Snooze</string>
+    <string name="snoozingEmail">Snoozing Email</string>
+    <string name="emailSnoozed">Email Snoozed</string>
+
+    <string name="messageArchived">Message Archived</string>
+    <string name="archivingMessage">Archiving message</string>
+    <string name="reminderEmail">Setting reminder</string>
+    <string name="reminderSet">Reminder set</string>
+    <string name="sendInviteMeeting">Sending meeting invite</string>
+    <string name="MeetingInviteSent">Meeting invite sent</string>
+
+    <string name="notifyMe">Notify Me</string>
+    <string name="archive">Archive</string>
+
+    <string name="act_setting_access_token">Login successfully</string>
+    <string name="act_setting_add_account">Add account</string>
+    <string name="item_all_accounts">Al Accounts</string>
+    <string name="confirmTimeMessage">Return this message to your inbox at: </string>
+    <string name="confirm">Confirm</string>
+    <string name="returnConversationInfo">Only if no one responds</string>
+    <string name="remindRecipients">Automatically remind recipients</string>
+    <string name="returnConversation">Return conversation</string>
+    <string name="tag_color_inbox">color_inbox</string>
+    <string name="tag_background_color">read_background</string>
+    <string name="tag_image_attached">image_attached</string>
+    <string name="tag_title">tag_title</string>
+    <string name="tag_title_inbox">tag_inbox_title</string>
+    <string name="tag_progress">tag_progress</string>
+    <string name="tag_snippet">tag_snippet</string>
+    <string name="tag_swipe">tag_swipe</string>
+    <string name="tag_showOriginal">tag_showOriginal</string>
+    <string name="tag_thread">tag_thread</string>
+    <string name="tag_position">tag_position</string>
+    <string name="tag_seconds">tag_seconds</string>
+    <string name="tag_message">tag_message</string>
+    <string name="tag_child_click">child_click</string>
+    <string name="tag_root_view">root_view</string>
+    <string name="tag_composed_contacts">emails</string>
+    <string name="tagRemoveView">removeView</string>
+    <string name="tagFileDelete">fileDelete</string>
+
+    <string name="sendEmail">Sending message&#8230;</string>
+    <string name="sendEmailError">Message has not been send</string>
+    <string name="messageSending">Message is sending</string>
+    <string name="messageSent">Message sent</string>
+    <string name="notEmailValid">Email is not valid</string>
+    <string name="sharePlanckMail">Tell your friends about PlankMail</string>
+
+    <string name="more">More</string>
+    <string name="defaultSettings">Default</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="emailAccounts">Email accounts</string>
+    <string name="emailAccount">Email account</string>
+    <string name="fileAccounts">File accounts</string>
+
+    <string name="folders">Folders</string>
+    <string name="files">Files</string>
+
+    <string name="add_account">+ Add Account</string>
+    <string name="calendar">Calendar</string>
+    <string name="mail">Mail</string>
+    <string name="signature">Signature</string>
+    <string name="swipe_options">Swipe Options</string>
+    <string name="focused_inbox">Focused Inbox</string>
+    <string name="share">Tell Your friends about Outlook</string>
+    <string name="help">Help</string>
+    <string name="remove_account">Remove account from device</string>
+
+    <string name="send_by">Send by <b>PlankMail</b> for Android</string>
+    <string name="loadFullMessage">Load full message</string>
+    <string name="subject_compose">Subject:</string>
+    <string name="subject">Subject: <b>%1$s</b></string>
+    <string name="no_mails">No Mails</string>
+    <string name="load_more">Load more</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="noResults">No results</string>
+    <string name="snoozeConfirmation">Snooze confirmation</string>
+    <string name="notifyConfirmation">Notify confirmation</string>
+    <string name="noInternetConnection">No internet connection</string>
+    <string name="noFilesImplemented">No file page implemented</string>
+
+    <string name="sendAvailability">Send availability</string>
+    <string name="createInvitation">Create Invitation</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="selectAll">Select All</string>
+    <string name="selectNone">Select None</string>
+    <string name="showCalendar">Show Calendar</string>
+    <string name="failedOpenFile">Can\'t download file</string>
+
+    <string name="choseFromAccounts">Chose file from accounts</string>
+    <string name="choseFromPhotos">Chose from Photos</string>
+    <string name="takePhoto">Take Photo</string>
+
+    <string name="filterFile">Files</string>
+    <string name="filterUnread">Unread</string>
+    <string name="filterClear">Clear</string>
+    <string name="filterAll">All</string>
+    <string name="filterImage">Image</string>
+    <string name="filterDoc">Doc</string>
+    <string name="filterSlide">Slide</string>
+    <string name="filterPdf">Pdf</string>
+    <string name="filterZip">Zip</string>
+
+    <string name="attachPhoto">Attach</string>
+
+    <string name="newMessageReceive">New message received</string>
+    <string name="newMessagesReceive">New messages received</string>
+
+    <string name="noEvents">No events</string>
+    <string name="agenda">Agenda</string>
+    <string name="day">Day</string>
+    <string name="calendarSettings">Calendar Settings</string>
+    <string name="defaultCalendar">Default Calendar</string>
+    <string name="accepted">Accepted</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="status">Status</string>
+    <string name="updateEvent">Event status updated</string>
+    <string name="updateEventTitle">Update Event</string>
+    <string name="createEventTitle">Create Event</string>
+    <string name="deleteEvent">Event deleted successfully</string>
+    <string name="createEvent">Event created successfully</string>
+
+    <string name="deleteMessage">Message deleted successfully</string>
+    <string name="archivedMessage">Message archived successfully</string>
+    <string name="moveInbox">Message moved to inbox </string>
+    <string name="moveStarred">Message moved to starred </string>
+    <string name="moveSpam">Message moved to spam </string>
+
+    <string name="confirmed">Confirmed</string>
+    <string name="tentative">Tentative</string>
+    <string name="canceled">Canceled</string>
+
+    <string name="alert">Alert</string>
+    <string name="organizer">Organizer</string>
+    <string name="attenders">Attenders</string>
+    <string name="noName">No name</string>
+    <string name="menu_move">move</string>
+    <string name="menu_delete">delete</string>
+    <string name="menu_archive">archive</string>
+    <string name="allDayEvent">All Day Event</string>
+    <string name="eventSubject">Event Subject</string>
+    <string name="eventLocation">Event Location</string>
+    <string name="duration">Duration</string>
+
+    <string name="halfHourDuration">0.5</string>
+    <string name="oneHourDuration">1 hour</string>
+    <string name="oneHalfHour">1.5</string>
+    <string name="twoHourDuration">2 hours</string>
+    <string name="threeHourDuration">3 hours</string>
+    <string name="fourHourDuration">4 hours</string>
+    <string name="fiveHourDuration">5 hours</string>
+    <string name="sixHourDuration">6 hours</string>
+    <string name="addDayDuration">All day</string>
+    <string name="line">-</string>
+    <string name="fromEvent">From:</string>
+    <string name="toEvent">To:</string>
+    <string name="eventInvitation"><b>Event Invitation</b>\n</string>
+    <string name="eventAvailable"><b>Event Available</b>\n</string>
+    <string name="when">When: </string>
+
+    <string name="meetingSubject">Meeting Subject</string>
+    <string name="location">Location</string>
+    <string name="invitees">Invitees</string>
+    <string name="title">Title</string>
+    <string name="people">People</string>
+    <string name="notes">Notes</string>
+    <string name="event">Event</string>
+
+    <string name="noRemainder">No remainder</string>
+    <string name="alertAtMeeting">At meeting start</string>
+    <string name="alertFiveMinutes">5 minutest before start</string>
+    <string name="alertTenMinutes">10 minutest before start</string>
+    <string name="alertFifteenMinutes">15 minutest before start</string>
+    <string name="alertThirtyMinutest">30 minutest before start</string>
+    <string name="alertOneHour">1 hour before start</string>
+
+    <string name="menuAttach">Attach</string>
+    <string name="menuEvent">Event</string>
+    <string name="menuSend">Send</string>
+
+    <string name="menu_mark_flagged">Mark Flagged</string>
+    <string name="menu_remove_flag">Remove Flag</string>
+    <string name="menu_mark_unread">Mark Unread</string>
+
+    <string name="reply">Reply</string>
+    <string name="replyAll">Reply All</string>
+    <string name="forward">Forward</string>
+    <string name="peopleNoFiles">No files with %1$s</string>
+
+    <string name="draftSaveDraft">Save in draft?</string>
+    <string name="draftDiscard">Discard</string>
+    <string name="draftCancel">Cancel</string>
+    <string name="draftSave">Save</string>
+
+    <string name="draftUpdate">Draft has been updated</string>
+    <string name="draftSaved">Draft has been saved</string>
+    <string name="draftDeleted">Draft has been deleted</string>
+
+    <string name="calendarCreateEvent">Calendar</string>
+    <string name="emailCreateEvent">Email</string>
+    <string name="repeat">Repeat</string>
+
+    <string name="noRepeat">No Repeat</string>
+    <string name="daily">Daily</string>
+    <string name="everyWeek">Every Week</string>
+    <string name="weekDay">Every WeekDay</string>
+    <string name="threeWeekDays">Every Monday Wednesday Friday</string>
+    <string name="twoWeekDays">Every Tuesday Thursday</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="noCalendars">No available calendars</string>
+
+    <!--message fragment-->
+    <string name="from">From:</string>
+    <string name="cc_bc">Cc/Bcc:</string>
+    <string name="hideDetails">Hide Details</string>
+    <string name="to">To:</string>
+    <string name="cc">Cc:</string>
+    <string name="bcc">Bcc:</string>
+    <string name="recipients">Recipients:</string>
+    <string name="date">Date:</string>
+    <string name="meetingCreated">Meeting created</string>
+    <string name="meetingUpdated">Meeting updated</string>
+    <string name="meetingDeleted">Meeting deleted</string>
+    <string name="imageFailed">Failed to add image</string>
+    <string name="noFiles">No files</string>
+
+    <string name="message_details">Message Details</string>
+    <string name="compose">Compose</string>
+    <string name="selectTime">Select time</string>
+    <string name="calendars">Calendars</string>
+    <string name="createAvailability">Create Availability</string>
+    <string name="removeFile">remove</string>
+    <string name="findLocation">Type to find your Location</string>
+
+    <string name="menuAddFiles">Add files</string>
+    <string name="menuNotifyMe">Notify me</string>
+    <string name="menuCreateInvitation">Create invitation</string>
+    <string name="menuSendAvailability">Send availability</string>
+    <string name="menuTrackMail">Track Mail</string>
+    <string name="messageMenuAction">Message actions</string>
+    <string name="searchLocation">Search location</string>
+    <string name="noSearchResult">No search result</string>
+    <string name="tag_location">tag_location</string>
+    <string name="tag_item_availability">tag_item_availability</string>
+    <string name="tag_availability_description">tag_availability_description</string>
+    <string name="tag_selected_availability">tag_selected_availability</string>
+    <string name="tag_access_token">tag_acсess_token</string>
+    <string name="tag_account_type">tag_account_type</string>
+    <string name="tagLinkFile">tag_link</string>
+    <string name="tagNameFile">tag_name</string>
+
+    <string name="linkPlaceHolder">%1$s %1$s</string>
+    <string name="tag_account">tag_account</string>
+    <string name="archiveSpam">Archive Spammer</string>
+    <string name="blocked">Blocked</string>
+    <string name="keep">Keep</string>
+
+    <string name="infoPeople">Info</string>
+    <string name="mailPeople">Mail</string>
+    <string name="eventsPeople">Events</string>
+    <string name="filesPeople">Files</string>
+    <string name="tag_content">tag_content</string>
+    <string name="messageDetails">Message Details</string>
+
+
+    <!--Email Tracking-->
+    <string name="track">Track</string>
+    <string name="tracked">Tracked</string>
+    <string name="tracking">Tracking&#8230;</string>
+
+    <string name="menu_today">Today</string>
+    <string name="menu_last7">Last 7 Days</string>
+    <string name="menu_last31">Last 31 Days</string>
+
+    <string name="noTrackingItems">No Tracking Items</string>
+    <string name="noDataToShow">No Data To Show</string>
+    <string name="title_activity_tracked_item">TrackedItemActivity</string>
+
+</resources>

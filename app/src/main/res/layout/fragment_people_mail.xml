@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_email"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclePeopleMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+
+    <TextView
+        android:id="@+id/tvNoPeopleEmails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="@dimen/text_medium"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/prLoadPeopleMails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>

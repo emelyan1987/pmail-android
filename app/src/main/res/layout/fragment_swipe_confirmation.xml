@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_email"
+     >
+
+    <RelativeLayout
+        android:id="@id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvDialogType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_confirm_swipe_screen"
+            android:background="@color/lightGreen"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/tvFrom"
+            android:layout_below="@+id/tvDialogType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/edge_large"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:text="From:"
+            />
+
+        <View
+            android:layout_below="@+id/tvFrom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_tiny"
+            android:layout_margin="@dimen/edge_medium"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_below="@+id/tvFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/edge_large"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:text="Subject:"
+            />
+
+        <View
+            android:layout_below="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_tiny"
+            android:layout_margin="@dimen/edge_medium"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_below="@+id/tvSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="@dimen/edge_large"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginRight="@dimen/edge_normal"
+            android:text="@string/confirmTimeMessage"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_below="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginRight="@dimen/edge_large"
+            android:layout_marginTop="@dimen/edge_above"
+            android:background="@drawable/white_rounded_corner"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <CheckBox
+            android:id="@+id/cbResponse"
+            android:layout_below="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/edge_medium"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginTop="@dimen/edge_medium"
+            android:checked="true"
+            android:clickable="false"
+            android:text="@string/returnConversationInfo"
+            android:visibility="gone"/>
+
+        <CheckBox
+            android:id="@+id/cbRemind"
+            android:layout_below="@+id/cbResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/edge_medium"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginTop="@dimen/edge_medium"
+            android:text="@string/remindRecipients"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_below="@+id/cbRemind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_big"
+            android:layout_marginLeft="@dimen/edge_large"
+            android:layout_marginRight="@dimen/edge_large"
+            android:layout_marginTop="@dimen/edge_extra_huge"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btConfirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/edge_medium"
+                android:layout_weight="1"
+                android:background="@drawable/green_background"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+
+            <Button
+                android:id="@+id/btCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/edge_medium"
+                android:layout_weight="1"
+                android:background="@drawable/green_background"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_normal"
+                android:textStyle="normal"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

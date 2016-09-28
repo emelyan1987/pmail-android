@@ -1,0 +1,76 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/htab_maincontent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/peopleAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/peopleToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlPeopleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/edge_big"
+                >
+                <TextView
+                    android:id="@+id/tvPeopleShortName"
+                    android:layout_width="@dimen/edge_extra_most"
+                    android:layout_height="@dimen/edge_extra_most"
+                    android:layout_marginLeft="@dimen/edge_medium"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/tvPeopleFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edge_medium"
+                    android:gravity="left|center_vertical"
+                    android:textSize="@dimen/text_medium"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <com.planckmail.views.MainTabLayout
+                android:id="@+id/peopleTabs"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/gray_email"
+                android:layout_alignParentBottom="true"
+
+                app:tabTextColor="@color/white"
+                app:tabSelectedTextColor="@color/lightGreen"
+                app:tabIndicatorColor="@color/lightGreen"
+                />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/peopleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>

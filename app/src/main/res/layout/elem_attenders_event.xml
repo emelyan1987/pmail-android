@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llAttendersContent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:id="@+id/tvAttenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/edge_above" />
+
+        <TextView
+            android:id="@+id/tvAttenderEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/edge_normal"
+            android:password="false" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/tvAttenderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</LinearLayout>
+

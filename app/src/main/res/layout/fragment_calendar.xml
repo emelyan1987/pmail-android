@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGreen"
+                android:visibility="gone"
+                app:mcv_arrowColor="@color/white"
+                app:mcv_dateTextAppearance="@style/myCustomCalendarTextAppearance"
+                app:mcv_headerTextAppearance="@style/myCustomCalendarTextAppearance"
+                app:mcv_weekDayTextAppearance="@style/myCustomCalendarTextAppearance" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_email"
+                android:scrollbars="vertical" />
+
+
+            <com.alamkanak.weekview.WeekView
+                android:id="@+id/weekViewAllCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:columnGap="@dimen/edge_tiny"
+                app:dayBackgroundColor="@color/white"
+                app:eventTextColor="@android:color/white"
+                app:headerColumnBackground="@color/white"
+                app:headerColumnPadding="@dimen/edge_medium"
+                app:headerColumnTextColor="@color/gray"
+                app:headerRowBackgroundColor="@color/gray_email"
+                app:headerRowPadding="@dimen/edge_above"
+                app:hourHeight="@dimen/hourHeight"
+                app:noOfVisibleDays="1"
+                app:textSize="@dimen/text_mini"
+                app:todayBackgroundColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNoInternetConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/noInternetConnection"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+
+        <ProgressBar
+            android:id="@+id/prLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/abCreateEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edge_big_large"
+        android:layout_marginRight="@dimen/edge_big_large"
+        app:backgroundTint="@color/lightGreen"
+        android:src="@drawable/ic_add_white_action_bar"
+        app:fabSize="normal"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/edge_medium"
+        app:layout_anchor="@+id/coordinateLayout"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

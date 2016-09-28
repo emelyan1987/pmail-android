@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llSelectAvailability"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider"
+    android:showDividers="middle"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_normal"
+        android:drawableLeft="@drawable/ic_adjust_grey"
+        android:drawablePadding="@dimen/edge_normal"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:paddingBottom="@dimen/edge_above"
+        android:paddingTop="@dimen/edge_above"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal"/>
+
+    <LinearLayout
+        android:id="@+id/llSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_clock_grey"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/edge_medium"
+            android:paddingTop="@dimen/edge_medium"
+            android:text="@string/selectTime"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvSelectTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_chevron_right_grey"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/edge_medium"
+            android:paddingTop="@dimen/edge_medium"
+            android:text="@string/none"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/edge_medium"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_map_marker_grey"
+            android:drawablePadding="@dimen/edge_normal"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/edge_medium"
+            android:paddingTop="@dimen/edge_medium"
+            android:text="@string/location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/edge_normal"
+            android:drawableRight="@drawable/ic_chevron_right_grey"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/edge_medium"
+            android:paddingTop="@dimen/edge_medium"
+            android:text="@string/none"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"/>
+    </LinearLayout>
+
+    <com.planckmail.views.ContactsCompletionView
+        android:id="@+id/etPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_medium"
+        android:drawableLeft="@drawable/ic_contacts_grey"
+        android:drawablePadding="@dimen/edge_normal"
+        android:gravity="center_vertical"
+        android:hint="@string/people"
+        android:paddingBottom="@dimen/edge_above"
+        android:paddingTop="@dimen/edge_above"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_normal"
+        android:textStyle="normal"
+        />
+</LinearLayout>

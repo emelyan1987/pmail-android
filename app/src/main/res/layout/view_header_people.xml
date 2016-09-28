@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:id="@+id/ivPeopleHeader"
+    android:padding="@dimen/edge_normal"
+    android:orientation="horizontal"
+    android:textColor="@color/black"
+    android:textSize="@dimen/text_medium"
+    android:textStyle="bold"
+    tools:context=".MainActivity" />

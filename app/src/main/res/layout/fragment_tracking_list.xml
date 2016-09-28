@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="33dp" android:gravity="center_vertical"
+                  android:id="@+id/tracking_linear_layout">
+        <TextView android:id="@+id/tracking_tv_totals" android:text="0 Totals" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_totals_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        <TextView android:id="@+id/tracking_tv_opens" android:text="0 Opens" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_opens_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        <TextView android:id="@+id/tracking_tv_clicks" android:text="0 Clicks" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_clicks_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+        <TextView android:id="@+id/tracking_tv_replies" android:text="0 Replies" android:gravity="center" android:textSize="16dp" android:textStyle="bold" android:textColor="@color/track_replies_color" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="20dp"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/tracking_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tracking_linear_layout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tracking_radio_opened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Opened"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioButton
+            android:id="@+id/tracking_radio_sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Sent"/>
+
+        <RadioButton
+            android:id="@+id/tracking_radio_unopened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unopened"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tracking_radio_group">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tracking_rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/noDataToShow"
+            android:id="@+id/tracking_tv_no_data"
+            android:textStyle="normal"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/gray"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/tracking_pb_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>

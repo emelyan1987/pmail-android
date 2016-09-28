@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arrayMailSectionAllAccount">
+        <item>@string/item_inbox</item>
+        <item>@string/item_draft</item>
+        <item>@string/item_trash</item>
+        <item>@string/item_sent</item>
+        <item>@string/item_archive</item>
+        <item>@string/item_starred</item>
+        <item>@string/item_spam</item>
+    </array>
+
+    <array name="arrayMailSectionSingleAccount">
+        <item>@string/item_inbox</item>
+        <item>@string/item_draft</item>
+        <item>@string/item_trash</item>
+        <item>@string/item_sent</item>
+        <item>@string/item_archive</item>
+        <item>@string/item_starred</item>
+        <item>@string/item_spam</item>
+        <item>@string/item_folders</item>
+    </array>
+
+    <array name="arraySelectTime">
+        <item>@string/halfHour</item>
+        <item>@string/oneHour</item>
+        <item>@string/twoHours</item>
+        <item>@string/threeHours</item>
+        <item>@string/fourHours</item>
+        <item>@string/fiveHours</item>
+        <item>@string/sixHours</item>
+    </array>
+
+    <integer-array name="arraySelectTimeSeconds">
+        <item>1800</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>10800</item>
+        <item>14400</item>
+        <item>18000</item>
+        <item>21160</item>
+    </integer-array>
+
+
+    <string-array name="array_mail_section_black">
+        <item>@drawable/ic_inbox_black</item>
+        <item>@drawable/ic_drafts_black</item>
+        <item>@drawable/ic_delete_black</item>
+        <item>@drawable/ic_send_black</item>
+        <item>@drawable/ic_archive_black</item>
+        <item>@drawable/ic_mail_black</item>
+        <item>@drawable/ic_report_black</item>
+        <item>@drawable/ic_mail_black</item>
+    </string-array>
+
+    <string-array name="array_mail_section_grey">
+        <item>@drawable/ic_inbox_grey</item>
+        <item>@drawable/ic_drafts_grey</item>
+        <item>@drawable/ic_delete_grey</item>
+        <item>@drawable/ic_send_grey</item>
+        <item>@drawable/ic_archive_grey</item>
+        <item>@drawable/ic_mail_grey</item>
+        <item>@drawable/ic_report_grey</item>
+        <item>@drawable/ic_mail_grey</item>
+    </string-array>
+
+
+    <string-array name="array_message_reply">
+        <item>@string/reply</item>
+        <item>@string/replyAll</item>
+        <item>@string/forward</item>
+    </string-array>
+
+    <string-array name="array_files_list">
+        <item>@string/recentFiles</item>
+        <item>@string/photoLibrary</item>
+        <item>@string/takePicture</item>
+    </string-array>
+
+    <string-array name="all_array_accounts">
+        <item>@string/emailAccounts</item>
+        <item>@string/fileAccounts</item>
+    </string-array>
+
+    <string-array name="array_event_status">
+        <item>@string/confirmed</item>
+        <item>@string/tentative</item>
+        <item>@string/canceled</item>
+    </string-array>
+
+    <array name="array_create_availability">
+        <item>@string/halfHourDuration</item>
+        <item>@string/oneHourDuration</item>
+        <item>@string/oneHalfHour</item>
+        <item>@string/twoHourDuration</item>
+        <item>@string/threeHourDuration</item>
+        <item>@string/fourHourDuration</item>
+        <item>@string/fiveHourDuration</item>
+        <item>@string/sixHourDuration</item>
+        <item>@string/addDayDuration</item>
+    </array>
+
+    <array name="array_recurrent_rules">
+        <item>@string/noRepeat</item>
+        <item>@string/daily</item>
+        <item>@string/weekDay</item>
+        <item>@string/threeWeekDays</item>
+        <item>@string/twoWeekDays</item>
+        <item>@string/weekly</item>
+        <item>@string/monthly</item>
+    </array>
+
+    <array name="array_tutorialTitle">
+        <item>@string/tutorialScreenOneTitle</item>
+        <item>@string/tutorialScreenTwoTitle</item>
+        <item>@string/tutorialScreenThreeTitle</item>
+        <item>@string/tutorialScreenFourTitle</item>
+        <item>@string/tutorialScreenFiveTitle</item>
+    </array>
+
+    <array name="array_tutorialSubTitle">
+        <item>@string/tutorialScreenOneSubTitle</item>
+        <item>@string/tutorialScreenTwoSubTitle</item>
+        <item>@string/tutorialScreenThreeSubTitle</item>
+        <item>@string/tutorialScreenFourSubTitle</item>
+        <item>@string/tutorialScreenFiveSubTitle</item>
+    </array>
+
+    <string-array name="array_tutorialGifDescription">
+        <item>@drawable/file</item>
+        <item>@drawable/smart_inbox</item>
+        <item>@drawable/snooze</item>
+        <item>@drawable/summarization</item>
+        <item>@drawable/va</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionDone"
+        android:icon="@drawable/ic_check_grey_action_bar"
+        android:title="@string/done"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/actionCancel"
+        android:icon="@drawable/ic_close_white_action_bar"
+        android:title="@string/cancel"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>

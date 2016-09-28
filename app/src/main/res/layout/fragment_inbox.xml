@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycleInbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_email"
+                android:scrollbars="vertical" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/viewFilterEmail"
+            layout="@layout/view_filter_emails" />
+
+        <ProgressBar
+            android:id="@+id/prLoading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNoMails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_mails"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/text_large"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/abCreateEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/edge_big_large"
+        android:layout_marginRight="@dimen/edge_big_large"
+        android:src="@drawable/ic_mode_edit_white"
+        app:backgroundTint="@color/lightGreen"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/edge_medium"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/coordinateLayout"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

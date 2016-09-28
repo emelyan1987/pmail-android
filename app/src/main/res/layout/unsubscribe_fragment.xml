@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_email">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/llUnsubscribeAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ProgressBar
+                android:id="@+id/prUnsubscribing"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/edge_normal"/>
+
+            <TextView
+                android:id="@+id/tvUnsubscribeTtile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/unsubscribing"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edge_tiny"
+            android:layout_margin="@dimen/edge_large"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tvUnsubscribeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edge_medium"
+            android:gravity="center"
+            android:text="@string/unsubscribeDescription"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"/>
+
+        <Button
+            android:id="@+id/btUnsubscribeClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/edge_huge"
+            android:background="@drawable/rounded_backgroud_primary_green"
+            android:text="@string/close"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>

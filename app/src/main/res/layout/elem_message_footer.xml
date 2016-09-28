@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footer_height"
+    android:background="@color/lightGreen"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llMainReply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/flReply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivReplyBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_reply_white"/>
+        </FrameLayout>
+
+        <include layout="@layout/view_divider"/>
+
+        <FrameLayout
+            android:id="@+id/flReplyAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivReplyAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_reply_all_white"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="@dimen/edge_tiny"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_email"/>
+
+        <FrameLayout
+            android:id="@+id/flForward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_forward_white"/>
+        </FrameLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <FrameLayout
+        android:id="@+id/flExpand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivExpand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_expand"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <FrameLayout
+        android:id="@+id/flSummery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivSummery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_summary"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <FrameLayout
+        android:id="@+id/flSnooze"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivSnooze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_notify_white"/>
+    </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

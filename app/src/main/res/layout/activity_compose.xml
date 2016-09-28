@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/flMainCompose"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ProgressBar
+        android:id="@+id/compose_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinateLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollCompose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/llCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edge_above"
+            android:layout_marginRight="@dimen/edge_above"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llFrom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/edge_above"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvFromCompose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/from"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+                <Spinner
+                    android:id="@+id/spMail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llToCompose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/edge_above"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvToCompose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/to"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <com.planckmail.views.ContactsCompletionView
+                        android:id="@+id/acTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical|left"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_mini_normal"
+                        android:textStyle="normal"/>
+
+                    <ProgressBar
+                        android:id="@+id/prAcTo"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llCcCompose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/edge_above"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvCcCompose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/cc_bc"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <com.planckmail.views.ContactsCompletionView
+                        android:id="@+id/acCc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="1"
+                        android:gravity="center_vertical|left"
+                        android:imeOptions="flagNoExtractUi|actionSearch|actionNext"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_mini_normal"
+                        android:textStyle="normal"/>
+
+                    <ProgressBar
+                        android:id="@+id/prCcTo"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBccCompose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/edge_above"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvBccCompose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/bcc"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8">
+
+                    <com.planckmail.views.ContactsCompletionView
+                        android:id="@+id/acBcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:completionThreshold="1"
+                        android:focusable="true"
+                        android:gravity="center_vertical|left"
+                        android:imeOptions="flagNoExtractUi|actionSearch|actionNext"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_mini_normal"
+                        android:textStyle="normal"/>
+
+                    <ProgressBar
+                        android:id="@+id/prBccTo"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSubjectCompose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/edge_above"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/subject_compose"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+                <EditText
+                    android:id="@+id/etSubject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_mini_normal"
+                    android:textStyle="normal"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFiles"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/filesTitle"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_mini_normal"
+                android:textStyle="normal"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/llMailFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:id="@+id/viewFile"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/edge_normal"
+                android:background="@color/gray"
+                android:visibility="gone"/>
+
+            <include layout="@layout/item_availability"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardNotAvailability"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                card_view:cardCornerRadius="@dimen/edge_normal">
+
+                <TextView
+                    android:id="@+id/tvNoAvailableTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/edge_medium"
+                    android:text="@string/noAvailableTime"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_normal"
+                    android:textStyle="bold"
+                    android:visibility="visible"/>
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:id="@+id/viewCreateAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edge_tiny"
+                android:layout_marginTop="@dimen/edge_normal"
+                android:background="@color/gray"
+                android:visibility="gone"/>
+
+            <com.onegravity.rteditor.RTEditText
+                android:id="@+id/etComposeMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/edge_large"
+                android:paddingTop="@dimen/edge_huge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_mini_normal"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvFullMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edge_above"
+                android:text="@string/loadFullMessage"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_mini_normal"
+                android:textStyle="normal"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

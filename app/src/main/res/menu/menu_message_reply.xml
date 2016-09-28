@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itemReply"
+        android:title="@string/reply"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/itemReplyAll"
+        android:title="@string/replyAll"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/itemForward"
+        android:title="@string/forward"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>

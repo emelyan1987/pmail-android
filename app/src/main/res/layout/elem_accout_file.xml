@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flImage"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/edge_mini"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="normal"
+            android:layout_marginLeft="@dimen/edge_above"
+            android:layout_margin="@dimen/edge_medium" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llFileDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/edge_above"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvFileDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edge_mini"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flFileAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edge_medium"
+        android:layout_marginBottom="@dimen/edge_medium"
+        android:layout_marginTop="@dimen/edge_above">
+
+        <TextView
+            android:id="@+id/tvAccountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="normal"
+            android:layout_gravity="center_vertical" />
+    </FrameLayout>
+</LinearLayout>

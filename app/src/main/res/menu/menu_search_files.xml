@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filterAll"
+        android:title="@string/filterAll"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filterImage"
+        android:title="@string/filterImage"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filterDoc"
+        android:title="@string/filterDoc"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filterSlide"
+        android:title="@string/filterSlide"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filterPdf"
+        android:title="@string/filterPdf"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/filterZip"
+        android:title="@string/filterZip"
+        android:visible="true"
+        app:showAsAction="never"/>
+</menu>

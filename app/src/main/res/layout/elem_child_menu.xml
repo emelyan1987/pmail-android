@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/item_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1px" />
+
+    <LinearLayout
+        android:id="@+id/llItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_above"
+            android:layout_marginLeft="@dimen/edge_huge"
+            android:layout_marginTop="@dimen/edge_above"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_mail_grey"
+            android:drawablePadding="@dimen/edge_medium"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edge_above"
+            android:layout_marginRight="@dimen/edge_huge"
+            android:layout_marginTop="@dimen/edge_above"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_mini_normal"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

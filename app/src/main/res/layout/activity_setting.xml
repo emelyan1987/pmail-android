@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flMainSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlMainSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_email">
+
+        <ScrollView
+            android:id="@+id/scrollMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/gray"
+                android:dividerPadding="@dimen/edge_normal"
+                android:orientation="vertical"/>
+        </ScrollView>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menuAccountsAction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/edge_above"
+            android:layout_marginLeft="@dimen/edge_above"
+            android:layout_marginRight="@dimen/edge_above"
+            fab:menu_colorRipple="@color/primaryGreen"
+            fab:menu_colorNormal="@color/lightGreen"
+            fab:menu_colorPressed="@color/primaryGreen"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/abAddEmailAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_email_white"
+                fab:fab_label="@string/addEmailAccount"
+                fab:fab_colorNormal="@color/lightGreen"
+                fab:fab_colorRipple="@color/primaryGreen"
+                fab:fab_colorPressed="@color/primaryGreen"
+                fab:fab_size="mini"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/abAddFileAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_attach_file_white_action_bar"
+                fab:fab_label="@string/addFileAccount"
+                fab:fab_colorNormal="@color/lightGreen"
+                fab:fab_colorRipple="@color/primaryGreen"
+                fab:fab_colorPressed="@color/primaryGreen"
+                fab:fab_size="mini"
+                />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+        <WebView
+            android:id="@+id/webAddAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/edge_extra_most"
+            android:background="@drawable/account_page_logo"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/prLoadSetting"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</FrameLayout>

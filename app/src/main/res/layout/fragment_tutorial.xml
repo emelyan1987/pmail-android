@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTutorialTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/edge_big"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/lightGreen"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTutorialSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTutorialTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/edge_big"
+        android:layout_marginRight="@dimen/edge_big"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textStyle="normal"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/tvTutorialDescription"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_below="@+id/tvTutorialSubTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/edge_big"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="normal"/>
+</RelativeLayout>
